@@ -569,7 +569,115 @@ int rad,x,y,a,b,h;
 bool SE,E;
 void sun()
 {
+glColor3f(0.9764705882352941, 0.4705882352941176, 0.0196078431372549);
+a=1000;
+b=1000;
+x=0;
+rad=50;
+y=rad;
+h=1-rad;
+glBegin(GL_POLYGON);
 
+glVertex3i(x+b,y+b,0);
+
+
+if(h>=0)
+{
+    SE=true;
+    E=false;
+}
+else
+
+{
+    E=true;
+    SE=false;
+
+}
+
+while(y>=x)
+{
+
+    if(SE)
+    {
+
+        h=h+5+2*(x-y);
+
+
+        if(h>=0)
+{
+    SE=true;
+    E=false;
+}
+else
+
+{
+    E=true;
+    SE=false;
+
+}
+
+x++;
+y--;
+glVertex3f(x+a, y+b ,0.0);
+
+       glVertex3f(y+a, x+b, 0.0);
+       glVertex3f(-y+a, x+b, 0.0);
+       glVertex3f(-x+a, -y+b, 0.0);
+       glVertex3f(-y+a, -x+b, 0.0);
+       glVertex3f(y+a,-x+b , 0.0);
+       glVertex3f(x+a, -y+b, 0.0);
+       glVertex3f(x+a, y+b, 0.0);
+         glVertex3f(-x+a, y+b, 0.0);
+    }
+
+
+
+    if(E)
+    {
+
+        h=h+3+2*x;
+        if(h>=0)
+{
+    SE=true;
+    E=false;
+}
+else
+
+{
+    E=true;
+    SE=false;
+
+}
+x++;
+glVertex3f(x+a, y+b,0.0);
+
+       glVertex3i(y+a, x+b, 0.0);
+      glVertex3i(-y+a, x+b, 0.0);
+       glVertex3i(-x+a, -y+b, 0.0);
+       glVertex3i(-y+a, -x+b, 0.0);
+       glVertex3i(y+a,-x+b , 0.0);
+       glVertex3i(x+a, -y+b, 0.0);
+       glVertex3i(x+a, y+b, 0.0);
+         glVertex3i(-x+a, y+b, 0.0);
+    }
+
+
+
+
+}
+
+
+
+
+glEnd();
+
+glColor3f(0.9764705882352941, 0.4705882352941176, 0.0196078431372549);
+glBegin(GL_LINES);
+glVertex3i(1000,1000,0);
+glVertex3i(1000,950,0);
+
+
+glEnd();
 
 
 }
@@ -580,12 +688,106 @@ void sun()
 //night
 void night_effect()
 {
+glColor3f(0 ,0 ,0);
+    glBegin(GL_POLYGON);
 
+    glVertex3i(0, 300, 0);
+    glVertex3i(1200, 300, 0);
+    glVertex3i(1200, 1200, 0);
+    glVertex3i(0, 1200, 0);
+
+
+glEnd();
 
 }
 //star
 void star()
 {
+//star1
+    glColor3f(1, 1, 1);
+    glBegin(GL_POLYGON);
+
+    glVertex3i(30, 1020, 0);
+    glVertex3i(50, 1050, 0);
+    glVertex3i(50, 1100, 0);
+
+glEnd();
+glColor3f(1, 1, 1);
+    glBegin(GL_POLYGON);
+    glVertex3i(70, 1020, 0);
+    glVertex3i(50, 1100, 0);
+    glVertex3i(50, 1050, 0);
+glEnd();
+glColor3f(1, 1, 1);
+    glBegin(GL_POLYGON);
+    glVertex3i(50, 1050, 0);
+    glVertex3i(80, 1070, 0);
+    glVertex3i(20, 1070, 0);
+glEnd();
+
+//star2
+ glColor3f(1, 1, 1);
+    glBegin(GL_POLYGON);
+
+    glVertex3i(30+60+60, 1020+60, 0);
+    glVertex3i(50+60+60, 1050+60, 0);
+    glVertex3i(50+60+60, 1100+60, 0);
+
+glEnd();
+glColor3f(1, 1, 1);
+    glBegin(GL_POLYGON);
+    glVertex3i(70+60+60, 1020+60, 0);
+    glVertex3i(50+60+60, 1100+60, 0);
+    glVertex3i(50+60+60, 1050+60, 0);
+glEnd();
+glColor3f(1, 1, 1);
+    glBegin(GL_POLYGON);
+    glVertex3i(50+60+60, 1050+60, 0);
+    glVertex3i(80+60+60, 1070+60, 0);
+    glVertex3i(20+60+60, 1070+60, 0);
+glEnd();
+//star3
+ glColor3f(1, 1, 1);
+    glBegin(GL_POLYGON);
+
+    glVertex3i(30+120+120, 1020, 0);
+    glVertex3i(50+120+120, 1050, 0);
+    glVertex3i(50+120+120, 1100, 0);
+
+glEnd();
+glColor3f(1, 1, 1);
+    glBegin(GL_POLYGON);
+    glVertex3i(70+120+120, 1020, 0);
+    glVertex3i(50+120+120, 1100, 0);
+    glVertex3i(50+120+120, 1050, 0);
+glEnd();
+glColor3f(1, 1, 1);
+    glBegin(GL_POLYGON);
+    glVertex3i(50+120+120, 1050, 0);
+    glVertex3i(80+120+120, 1070, 0);
+    glVertex3i(20+120+120, 1070, 0);
+glEnd();
+//star4
+glColor3f(1, 1, 1);
+    glBegin(GL_POLYGON);
+
+    glVertex3i(30+120+120+120, 1020+60, 0);
+    glVertex3i(50+120+120+120, 1050+60, 0);
+    glVertex3i(50+120+120+120, 1100+60, 0);
+
+glEnd();
+glColor3f(1, 1, 1);
+    glBegin(GL_POLYGON);
+    glVertex3i(70+120+120+120, 1020+60, 0);
+    glVertex3i(50+120+120+120, 1100+60, 0);
+    glVertex3i(50+120+120+120, 1050+60, 0);
+glEnd();
+glColor3f(1, 1, 1);
+    glBegin(GL_POLYGON);
+    glVertex3i(50+120+120+120, 1050+60, 0);
+    glVertex3i(80+120+120+120, 1070+60, 0);
+    glVertex3i(20+120+120+120, 1070+60, 0);
+glEnd();
 
 }
 //mon
@@ -593,6 +795,124 @@ void moon()
 {
 
 
+
+glColor3f(1,1,1);
+
+
+a=600;
+b=1000;
+x=0;
+rad=50;
+y=rad;
+h=1-rad;
+
+glVertex3i(x+a,y+b,0);
+
+
+glBegin(GL_POLYGON);
+
+glVertex3i(x+a,y+b,0);
+
+if(h>=0)
+{
+    SE=true;
+    E=false;
+}
+else
+
+{
+    E=true;
+    SE=false;
+
+}
+
+while(y>=x)
+{
+
+    if(SE)
+    {
+
+        h=h+5+2*(x-y);
+
+
+        if(h>=0)
+{
+    SE=true;
+    E=false;
+}
+else
+
+{
+    E=true;
+    SE=false;
+
+}
+
+x++;
+y--;
+glVertex3f(x+a, y+b ,0.0);
+
+       glVertex3f(y+a, x+b, 0.0);
+       glVertex3f(-y+a, x+b, 0.0);
+       glVertex3f(-x+a, -y+b, 0.0);
+       glVertex3f(-y+a, -x+b, 0.0);
+       glVertex3f(y+a,-x+b , 0.0);
+       glVertex3f(x+a, -y+b, 0.0);
+       glVertex3f(x+a, y+b, 0.0);
+         glVertex3f(-x+a, y+b, 0.0);
+    }
+
+
+
+    if(E)
+    {
+
+        h=h+3+2*x;
+        if(h>=0)
+{
+    SE=true;
+    E=false;
+}
+else
+
+{
+    E=true;
+    SE=false;
+
+}
+x++;
+glVertex3f(x+a, y+b,0.0);
+
+       glVertex3i(y+a, x+b, 0.0);
+      glVertex3i(-y+a, x+b, 0.0);
+       glVertex3i(-x+a, -y+b, 0.0);
+       glVertex3i(-y+a, -x+b, 0.0);
+       glVertex3i(y+a,-x+b , 0.0);
+       glVertex3i(x+a, -y+b, 0.0);
+       glVertex3i(x+a, y+b, 0.0);
+         glVertex3i(-x+a, y+b, 0.0);
+    }
+
+
+
+
+}
+
+
+
+
+glEnd();
+
+glColor3f(1, 1, 1);
+glBegin(GL_LINES);
+glVertex3i(601,980,0);
+glVertex3i(601,950,0);
+glVertex3i(600,980,0);
+glVertex3i(600,950,0);
+
+
+
+glEnd();
 
 
 }
