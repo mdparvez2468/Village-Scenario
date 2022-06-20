@@ -221,7 +221,49 @@ void kup()
 //road
 void road()
 {
+ glColor3f(1.0 ,1.0 ,1.0);
+    glBegin(GL_POLYGON);
 
+    glVertex3i(620, 495, 0);
+    glVertex3i(1200, 495, 0);
+    glVertex3i(1200, 545, 0);
+    glVertex3i(620, 545, 0);
+
+glEnd();
+
+    glColor3f(1.0 ,1.0 ,1.0);
+    glBegin(GL_POLYGON);
+
+    glVertex3i(600, 250, 0);
+    glVertex3i(630, 250, 0);
+    glVertex3i(630, 545, 0);
+    glVertex3i(600, 545, 0);
+
+
+glEnd();
+
+ glColor3f(1.0 ,1.0 ,1.0);
+    glBegin(GL_POLYGON);
+
+    glVertex3i(300, 250, 0);
+    glVertex3i(620, 250, 0);
+    glVertex3i(620, 300, 0);
+    glVertex3i(300, 300, 0);
+
+
+glEnd();
+
+
+ glColor3f(1.0 ,1.0 ,1.0);
+    glBegin(GL_POLYGON);
+
+    glVertex3i(285, 250, 0);
+    glVertex3i(320, 250, 0);
+    glVertex3i(320, 320, 0);
+    glVertex3i(285, 320, 0);
+
+
+glEnd();
 
 }
 
@@ -229,6 +271,32 @@ void road()
 ///hill
 void hill()
 {
+	
+	 glColor3f(0.2, 0.2, 0.2);
+    glBegin(GL_POLYGON);
+
+    glVertex3i(600, 600, 0);
+    glVertex3i(800, 900, 0);
+    glVertex3i(900, 650, 0);
+    //glVertex3i(600, 600, 0);
+
+    glColor3f(0.2, 0.2, 0.2);
+    glBegin(GL_POLYGON);
+
+    //glVertex3i(600, 600, 0);
+    glVertex3i(900, 650, 0);
+    glVertex3i(1000, 800, 0);
+    glVertex3i(1100, 620, 0);
+
+     glColor3f(0.2, 0.2, 0.2);
+    glBegin(GL_POLYGON);
+
+    glVertex3i(1050, 620, 0);
+    glVertex3i(1200, 800, 0);
+    glVertex3i(1200, 600, 0);
+    //glVertex3i(1100, 620, 0);
+
+glEnd();
 
 
 }
@@ -236,6 +304,260 @@ void tree()
 {
 
 
+
+///4
+glColor3f(0.6156863,0,0);
+
+glBegin(GL_POLYGON);
+
+
+    glVertex3i(50+800, 350+130, 0);
+    glVertex3i(70+800, 350+130, 0);
+
+
+    glVertex3i(70+800, 500+130, 0);
+    glVertex3i(50+800, 500+130, 0);
+
+
+glEnd();
+
+  glColor3f(0.0, 0.5, 0.0);
+
+glBegin(GL_POLYGON);
+
+
+    glVertex3i(10+800, 500+130, 0);
+    glVertex3i(110+800, 500+130, 0);
+
+
+    glVertex3i(60+800, 600+130, 0);
+
+
+
+glEnd();
+glBegin(GL_POLYGON);
+
+
+    glVertex3i(15+800, 550+130, 0);
+    glVertex3i(105+800, 550+130, 0);
+
+
+    glVertex3i(60+800, 650+130, 0);
+
+
+
+glEnd();
+
+///6
+glColor3f(0.6156863,0,0);
+
+glBegin(GL_POLYGON);
+
+
+    glVertex3i(50+600, 350+130, 0);
+    glVertex3i(70+600, 350+130, 0);
+
+
+    glVertex3i(70+600, 500+130, 0);
+    glVertex3i(50+600, 500+130, 0);
+
+
+glEnd();
+
+  glColor3f(0.0, 0.5, 0.0);
+
+glBegin(GL_POLYGON);
+
+
+    glVertex3i(10+600, 500+130, 0);
+    glVertex3i(110+600, 500+130, 0);
+
+
+    glVertex3i(60+600, 600+130, 0);
+
+
+
+glEnd();
+glBegin(GL_POLYGON);
+
+
+    glVertex3i(15+600, 550+130, 0);
+    glVertex3i(105+600, 550+130, 0);
+
+
+    glVertex3i(60+600, 650+130, 0);
+
+
+
+glEnd();
+///2
+glColor3f(0.6156863,0,0);
+
+glBegin(GL_POLYGON);
+
+
+    glVertex3i(50+1000, 350+130, 0);
+    glVertex3i(70+1000, 350+130, 0);
+
+
+    glVertex3i(70+1000, 500+130, 0);
+    glVertex3i(50+1000, 500+130, 0);
+
+
+glEnd();
+
+  glColor3f(0.0, 0.5, 0.0);
+
+glBegin(GL_POLYGON);
+
+
+    glVertex3i(10+1000, 500+130, 0);
+    glVertex3i(110+1000, 500+130, 0);
+
+
+    glVertex3i(60+1000, 600+130, 0);
+
+
+
+glEnd();
+glBegin(GL_POLYGON);
+
+
+    glVertex3i(15+1000, 550+130, 0);
+    glVertex3i(105+1000, 550+130, 0);
+
+
+    glVertex3i(60+1000, 650+130, 0);
+
+
+
+glEnd();
+
+///1
+glColor3f(0.6156863,0,0);
+
+glBegin(GL_POLYGON);
+
+
+    glVertex3i(50+1100, 350+200, 0);
+    glVertex3i(70+1100, 350+200, 0);
+
+
+    glVertex3i(70+1100, 500+200, 0);
+    glVertex3i(50+1100, 500+200, 0);
+
+
+glEnd();
+
+  glColor3f(0.0, 0.5, 0.0);
+
+glBegin(GL_POLYGON);
+
+
+    glVertex3i(10+1100, 500+200, 0);
+    glVertex3i(110+1100, 500+200, 0);
+
+
+    glVertex3i(60+1100, 600+200, 0);
+
+
+
+glEnd();
+glBegin(GL_POLYGON);
+
+
+    glVertex3i(15+1100, 550+200, 0);
+    glVertex3i(105+1100, 550+200, 0);
+
+
+    glVertex3i(60+1100, 650+200, 0);
+
+
+
+glEnd();
+///3
+
+glColor3f(0.6156863,0,0);
+
+glBegin(GL_POLYGON);
+
+
+    glVertex3i(50+900, 350+200, 0);
+    glVertex3i(70+900, 350+200, 0);
+
+
+    glVertex3i(70+900, 500+200, 0);
+    glVertex3i(50+900, 500+200, 0);
+
+
+glEnd();
+
+  glColor3f(0.0, 0.5, 0.0);
+
+glBegin(GL_POLYGON);
+
+
+    glVertex3i(10+900, 500+200, 0);
+    glVertex3i(110+900, 500+200, 0);
+
+
+    glVertex3i(60+900, 600+200, 0);
+
+
+
+glEnd();
+glBegin(GL_POLYGON);
+
+
+    glVertex3i(15+900, 550+200, 0);
+    glVertex3i(105+900, 550+200, 0);
+
+
+    glVertex3i(60+900, 650+200, 0);
+
+glEnd();
+
+
+///tree5
+glColor3f(0.6156863,0,0);
+
+glBegin(GL_POLYGON);
+
+
+    glVertex3i(50+700, 350+200, 0);
+    glVertex3i(70+700, 350+200, 0);
+
+
+    glVertex3i(70+700, 500+200, 0);
+    glVertex3i(50+700, 500+200, 0);
+
+
+glEnd();
+
+  glColor3f(0.0, 0.5, 0.0);
+
+glBegin(GL_POLYGON);
+
+
+    glVertex3i(10+700, 500+200, 0);
+    glVertex3i(110+700, 500+200, 0);
+
+
+    glVertex3i(60+700, 600+200, 0);
+
+
+
+glEnd();
+glBegin(GL_POLYGON);
+
+
+    glVertex3i(15+700, 550+200, 0);
+    glVertex3i(105+700, 550+200, 0);
+
+
+    glVertex3i(60+700, 650+200, 0);
+
+glEnd();
 
 
 }
