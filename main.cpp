@@ -929,7 +929,16 @@ glEnd();
 void river()
 {
 
+ glColor3f(0.0352941176470588, 0.5098039215686275, 0.9568627450980392);
+glBegin(GL_POLYGON);
 
+    glVertex3i(0, 0, 0);
+    glVertex3i(1200, 0, 0);
+    glVertex3i(1200, 200, 0);
+    glVertex3i(0, 200, 0);
+
+
+glEnd();
 
 
 }
@@ -937,6 +946,25 @@ void boat()
 {
 
 
+
+  glColor3f(0,0,0);
+    glBegin(GL_POLYGON);
+
+
+    glVertex3i(10,100,0);
+    glVertex3i(150+50,100,0);
+    glVertex3i(120+50,50,0);
+    glVertex3i(30,50,0);
+    glEnd();
+  glColor3f(1.0, 0.3, 1.0);
+    glBegin(GL_POLYGON);
+
+
+    glVertex3i(50,100,0);
+    glVertex3i(150,100,0);
+    glVertex3i(150,150,0);
+    glVertex3i(50,150,0);
+    glEnd();
 
 
 
